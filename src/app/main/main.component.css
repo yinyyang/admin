@@ -1,0 +1,18 @@
+@import "./../../assets/css/components_main.css";
+@import "./../../assets/css/font-awesome.min.css";
+.page-header-inner{
+  width: 100%;
+}
+.nav>li>a:after{
+  display: none;
+}
+.page-header-fixed .page-container {
+  margin-top: 0px;
+}
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }

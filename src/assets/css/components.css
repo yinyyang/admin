@@ -1,0 +1,54 @@
+div, input, select, textarea, span, img, table, label, td, th, p, a, button, ul, code, pre, li {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+a {
+  text-shadow: none;
+  color: #5b9bd1;
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.btn-success {
+  color: #fff;
+  background-color: #45B6AF;
+  border-color: #3ea49d;
+}
+
+.btn {
+  border-width: 0;
+  padding: 7px 14px;
+  font-size: 14px;
+  outline: none !important;
+  background-image: none !important;
+  filter: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.visible-ie9 {
+  display: none;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
