@@ -1,0 +1,12 @@
+.bar{
+  background: #ffffff;
+  position: relative;
+  padding: 0px 20px;
+  margin: -25px -20px 0 -20px;
+}
+
+.breadcrumb{
+  font-size: 0.75rem;
+  color: #888;
+  background: none;
+}

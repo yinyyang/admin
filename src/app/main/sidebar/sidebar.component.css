@@ -1,0 +1,7 @@
+.side_bar{
+  z-index: 9900;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: #364150;
+}
