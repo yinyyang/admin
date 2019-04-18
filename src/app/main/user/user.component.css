@@ -1,0 +1,66 @@
+.table-title {
+  background: #95A5A6;
+  border-bottom: 0;
+  padding: 0;
+  margin-bottom: 0;
+  color: #fff;
+  height: 2rem;
+
+}
+.title {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+
+
+}
+
+.tools {
+  display: inline-block;
+  float: right;
+  padding: 5px;
+
+}
+
+.table-title .tools a{
+   color: #ffffff;
+ }
+
+.table-title .tools a:hover{
+  cursor: pointer;
+}
+
+.table-advance thead tr th {
+  font-weight: 500;
+}
+.table-advance tbody tr  {
+  font-size: 0.85rem;
+}
+
+
+.table .btn {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+  border-radius: 0rem;
+  line-height: 0.8;
+  padding: 3px;
+}
+
+
+.purple.btn {
+  color: #ffffff;
+  background-color: #8e5fa2;
+}
+
+.default.btn {
+  color: #333;
+  background-color: #E5E5E5;
+}
+
+.default.btn:hover, .default.btn:focus, .default.btn:active, .default.btn.active {
+
+  background-color: lightgray;
+  cursor: pointer;
+}

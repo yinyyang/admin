@@ -1,11 +1,16 @@
 <div class="bar">
   <ul class="breadcrumb">
     <li>
-      Home
+      <i class="glyphicon glyphicon-home"></i>
+      <a href="index.html">Home</a>
+      <i class="glyphicon glyphicon-menu-right"></i>
     </li>
-     DashBoard
     <li>
-
+      <a href="#">Pages</a>
+      <i class="glyphicon glyphicon-menu-right"></i>
+    </li>
+    <li>
+      <a [routerLink]="['./user']">User</a>
     </li>
   </ul>
 

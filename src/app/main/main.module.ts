@@ -10,9 +10,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { MidcontainerComponent } from './midcontainer/midcontainer.component';
 import { ContentbarComponent } from './contentbar/contentbar.component';
+import { UserComponent } from './user/user.component';
+import {TableshowDirective} from '../directive/tableshow.directive';
 
 @NgModule({
-  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent],
+  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent, TableshowDirective, UserComponent],
   imports: [
     CommonModule,
     MainRoutingModule

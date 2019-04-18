@@ -1,12 +1,22 @@
 .bar{
-  background: #ffffff;
-  position: relative;
+  background: #f7f7f7;
   padding: 0px 20px;
   margin: -25px -20px 0 -20px;
 }
 
 .breadcrumb{
-  font-size: 0.75rem;
+
+  font-size: 0.9rem;
   color: #888;
   background: none;
+  padding: .75rem 0;
+
+}
+
+.breadcrumb a{
+  color: #888;
+}
+.breadcrumb li i{
+  padding: 5px;
+  font-size: 0.7rem;
 }
