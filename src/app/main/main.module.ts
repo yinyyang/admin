@@ -12,9 +12,10 @@ import { MidcontainerComponent } from './midcontainer/midcontainer.component';
 import { ContentbarComponent } from './contentbar/contentbar.component';
 import { UserComponent } from './user/user.component';
 import {TableshowDirective} from '../directive/tableshow.directive';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
-  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent, TableshowDirective, UserComponent],
+  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent, TableshowDirective, UserComponent, PaginationComponent],
   imports: [
     CommonModule,
     MainRoutingModule

@@ -1,4 +1,4 @@
-import {Component, Directive, ElementRef, HostListener, Input, Output, EventEmitter} from '@angular/core';
+import {Component, Directive, ElementRef, HostListener, Input, Output, EventEmitter, Renderer2} from '@angular/core';
 import {tap} from 'rxjs/internal/operators';
 
 @Directive({
@@ -22,7 +22,6 @@ export class TableshowDirective {
 
   private hide() {
     if (this.isShow === true) {
-
       document.getElementById(this.tableId).style.display = 'none';
       this.isShow = false;
       this.el.nativeElement.getElementsByTagName('i').item(0).setAttribute('class', 'glyphicon glyphicon-menu-up');
