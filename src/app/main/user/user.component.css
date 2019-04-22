@@ -1,4 +1,11 @@
-.table-title {
+.table-panel{
+  height: 80%;
+}
+
+.table-panel .table-body{
+  height: 95%;
+}
+.table-panel .table-title {
   background: #95A5A6;
   border-bottom: 0;
   padding: 0;
@@ -30,6 +37,7 @@
   cursor: pointer;
 }
 
+
 .table-advance thead tr th {
   font-weight: 500;
 }
@@ -37,6 +45,10 @@
   font-size: 0.85rem;
 }
 
+/*.table-panel .pagination{*/
+/*  position: absolute;*/
+/*  margin-bottom: 3px;*/
+/*}*/
 
 .table .btn {
   margin-top: 0px;

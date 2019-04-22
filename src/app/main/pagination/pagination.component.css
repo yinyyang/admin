@@ -1,7 +1,26 @@
+.page-bar {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.68rem;
+
+}
+
+.page-bar input,select{
+  display: inline;
+  font-size: 0.75rem;
+  width: 4rem;
+  border-radius: 0;
+}
+
+.page-bar input{
+  width: 2.5rem;
+  height: 1.5rem;
+}
+.pagination {
+  display: inline-flex;
+}
 .info{
   font-size: 0.8rem;
 }
 
-nav {
-  font-size: 0.68rem;
-}
+
