@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
@@ -12,5 +12,10 @@ export class PaginationComponent implements OnInit {
   ngOnInit() {
     console.log('test debugger');
   }
+
+  clickPageLink($event) {
+    console.log($event);
+  }
+
 
 }

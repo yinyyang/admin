@@ -1,10 +1,15 @@
 .page-bar {
   position: absolute;
   bottom: 0;
+  width: 100%;
   font-size: 0.68rem;
 
 }
 
+.page-link{
+  border: none;
+  color: #333333;
+}
 .page-bar input,select{
   display: inline;
   font-size: 0.75rem;

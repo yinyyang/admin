@@ -3,6 +3,7 @@
 }
 
 .table-panel .table-body{
+  position: relative;
   height: 95%;
 }
 .table-panel .table-title {
