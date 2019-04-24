@@ -10,6 +10,9 @@
   border: none;
   color: #333333;
 }
+.current-page{
+  background: #eeeeee;
+}
 .page-bar input,select{
   display: inline;
   font-size: 0.75rem;
