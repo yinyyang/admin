@@ -13,12 +13,14 @@ import { ContentbarComponent } from './contentbar/contentbar.component';
 import { UserComponent } from './user/user.component';
 import {TableshowDirective} from '../directive/tableshow.directive';
 import { PaginationComponent } from './pagination/pagination.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent, TableshowDirective, UserComponent, PaginationComponent],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    FormsModule
   ],
   providers: [MainGuard]
 })

@@ -1,27 +1,40 @@
-import {Component, ElementRef, OnInit, ViewChild, AfterViewInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.css']
 })
-export class PaginationComponent implements OnInit , AfterViewInit {
+export class PaginationComponent implements OnInit {
 
-  @ViewChild('pagination')
-  paginationRef: ElementRef;
+  currentPage: number;
   constructor() { }
 
   ngOnInit() {
-    console.log('test debugger');
+    this.currentPage = 1;
   }
 
-  clickPageLink() {
-    console.log(this.paginationRef);
+  clickPageLink($event) {
+     this.currentPage = $event.target.text;
   }
 
-  ngAfterViewInit() {
-    console.log(this.paginationRef.nativeElement);
+   clickNext() {
+      this.currentPage = this.currentPage + 1;
+   }
+
+   clickPrevious() {
+     this.currentPage = this.currentPage - 1;
+   }
+
+   clickFirstPage() {
+     this.currentPage = 1;
+   }
+
+   clickLastPage() {
+     this.currentPage = 3;
+   }
+
+  goPage() {
+    console.log(this.currentPage);
   }
-
-
 }
