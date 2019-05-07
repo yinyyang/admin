@@ -13,26 +13,26 @@
   <div class="d-inline float-right">
 
       <ul class="pagination">
-        <li [ngClass]="{'page-item':true, 'disabled':this.currentPage==1}">
+        <li  class="'page-item'" [ngClass]="{'disabled':this.currentPage==1}">
           <a class="page-link" (click)="clickFirstPage()">
             <i class="glyphicon glyphicon-fast-backward"></i>
           </a>
         </li>
-        <li [ngClass]="{'page-item':true, 'disabled':this.currentPage==1}">
+        <li class="page-item" [ngClass]="{'disabled':this.currentPage==1}">
           <a class="page-link" (click)="clickPrevious()">
             <i class="glyphicon glyphicon-triangle-left"></i>
           </a>
         </li>
-        <li class="page-item"><a  [ngClass]="{'page-link':true, 'current-page' :this.currentPage==1 }" (click)="clickPageLink($event)">1</a></li>
-        <li class="page-item"><a [ngClass]="{'page-link':true, 'current-page' :this.currentPage==2 }" (click)="clickPageLink($event)">2</a></li>
-        <li class="page-item"><a [ngClass]="{'page-link':true, 'current-page' :this.currentPage==3 }" (click)="clickPageLink($event)">3</a></li>
-        <li [ngClass]="{'page-item':true, 'disabled':this.currentPage==3}">
+        <li class="page-item"><a  class="page-link" [ngClass]="{'current-page' :this.currentPage==1 }" (click)="clickPageLink($event)">1</a></li>
+        <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==2 }" (click)="clickPageLink($event)">2</a></li>
+        <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==3 }" (click)="clickPageLink($event)">3</a></li>
+        <li  class="page-item" [ngClass]="{'disabled':this.currentPage==3}">
           <a class="page-link" (click)="clickNext()">
             <i class="glyphicon glyphicon-triangle-right"></i>
           </a>
 
         </li>
-        <li  [ngClass]="{'page-item':true, 'disabled':this.currentPage==3}">
+        <li  class="page-item" [ngClass]="{'disabled':this.currentPage==3}">
           <a class="page-link" (click)="clickLastPage()">
             <i class="glyphicon glyphicon-fast-forward"></i>
           </a>
