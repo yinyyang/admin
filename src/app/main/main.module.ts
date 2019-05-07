@@ -14,9 +14,10 @@ import { UserComponent } from './user/user.component';
 import {TableshowDirective} from '../directive/tableshow.directive';
 import { PaginationComponent } from './pagination/pagination.component';
 import {FormsModule} from "@angular/forms";
+import { ViewComponent } from './user/view/view.component';
 
 @NgModule({
-  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent, TableshowDirective, UserComponent, PaginationComponent],
+  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent, TableshowDirective, UserComponent, PaginationComponent, ViewComponent],
   imports: [
     CommonModule,
     MainRoutingModule,
