@@ -3,8 +3,8 @@
     <div class="info d-inline">Showing 1 to 5 of 25 entries</div>
     <div class="d-inline p-3">
     <span class="mr-2">Show</span>
-  <select id="inputState" class="form-control">
-    <option selected>10</option>
+  <select id="inputState" class="form-control" [(ngModel)]="pageSize">
+    <option>10</option>
     <option>20</option>
     <option>50</option>
   </select>

@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
@@ -7,11 +7,15 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 })
 export class PaginationComponent implements OnInit {
 
+  @Output()
+  onLoad: EventEmitter<any> = new EventEmitter();
   currentPage: number;
+  pageSize :number;
   constructor() { }
 
   ngOnInit() {
     this.currentPage = 1;
+    this.pageSize =20;
   }
 
   clickPageLink($event) {
@@ -20,6 +24,7 @@ export class PaginationComponent implements OnInit {
 
    clickNext() {
       this.currentPage = this.currentPage + 1;
+      this.onLoad.emit(this.currentPage);
    }
 
    clickPrevious() {
@@ -35,6 +40,6 @@ export class PaginationComponent implements OnInit {
    }
 
   goPage() {
-    console.log(this.currentPage);
+    this.onLoad.emit(this.currentPage);
   }
 }

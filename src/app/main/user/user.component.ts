@@ -12,4 +12,8 @@ export class UserComponent implements OnInit {
   ngOnInit() {
   }
 
+  getPage(e){
+    console.log('用户页面加载数据中...');
+    console.log('当前页:'+e);
+  }
 }
