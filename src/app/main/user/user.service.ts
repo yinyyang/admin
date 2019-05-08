@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
 import {ajax} from 'rxjs/internal/observable/dom/ajax';
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-
+  API_URL = environment.apiUrl;
   constructor() { }
 
   getUsers(): any {
-   return   ajax('https://jsonplaceholder.typicode.com/users');
+   return   ajax(this.API_URL+'/users');
 
   }
 }
