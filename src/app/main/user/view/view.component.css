@@ -1,0 +1,17 @@
+.modal-header{
+  background: #95A5A6;
+  border-radius: 0;
+}
+
+.modal-title{
+  padding: 0;
+}
+
+.modal-header .close{
+  padding: 0.35rem 0.35rem;
+}
+
+.modal-header .remove-icon{
+
+  background: image('/src/assets/imgs/icon/portlet-remove-icon-white.png');
+}
