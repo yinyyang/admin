@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from './user.service';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {ViewComponent} from './view/view.component';
 
 @Component({
   selector: 'app-user',
@@ -10,8 +12,7 @@ import {UserService} from './user.service';
 export class UserComponent implements OnInit {
 
   users: any;
-  userDetail: any;
-  constructor(private userService: UserService) {
+  constructor(private userService: UserService, private modalService: NgbModal) {
     userService.getUsers().subscribe(res => {
       console.log(res.response);
       if (res.status === 200) {
@@ -35,6 +36,7 @@ export class UserComponent implements OnInit {
 
   view(user) {
     console.log(user);
-    this.userDetail = user;
+    const viewUserRef = this.modalService.open(ViewComponent);
+    viewUserRef.componentInstance.user = user;
   }
 }

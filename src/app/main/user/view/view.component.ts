@@ -1,4 +1,5 @@
 import { Component, OnInit , Input} from '@angular/core';
+import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-user-view',
@@ -8,7 +9,7 @@ import { Component, OnInit , Input} from '@angular/core';
 export class ViewComponent implements OnInit {
 
   @Input() user: any;
-  constructor() { }
+  constructor(private modal: NgbActiveModal) { }
 
   ngOnInit() {
   }
