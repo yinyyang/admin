@@ -5,11 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {LoginModule} from './login/login.module';
 import {MainModule} from './main/main.module';
-import { TableshowDirective } from './directive/tableshow.directive';
+import { Css3loadingComponent } from './anminations/css3loading/css3loading.component';
+import { GifloadingComponent } from './anminations/gifloading/gifloading.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Css3loadingComponent,
+    GifloadingComponent
   ],
   imports: [
     BrowserModule,

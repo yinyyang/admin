@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~glyphicons-only-bootstrap/css/bootstrap.css";
 @import "~tooltips/dist/tooltips.min.css";
+@import "assets/css/component.css";
 html,body {
 
   height:100%

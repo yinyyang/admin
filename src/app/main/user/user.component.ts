@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {UserService} from './user.service';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {ViewComponent} from './view/view.component';
-
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -13,6 +12,7 @@ export class UserComponent implements OnInit {
 
   users: any;
   constructor(private userService: UserService, private modalService: NgbModal) {
+
     userService.getUsers().subscribe(res => {
       console.log(res.response);
       if (res.status === 200) {

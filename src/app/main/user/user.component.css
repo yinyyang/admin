@@ -1,10 +1,7 @@
 .table-panel{
-  height: 80%;
-}
-
-.table-panel .table-body{
-  position: relative;
-  height: 95%;
+  min-height: 96%;
+  border: 1px solid #95A5A6;
+  overflow: hidden;
 }
 .table-panel .table-title {
   background: #95A5A6;
@@ -15,7 +12,14 @@
   height: 2rem;
 
 }
-.title {
+
+.table-panel .table-body{
+  height: 95%;
+  width: 98%;
+  margin: auto;
+}
+
+.table-panel .table-title  .title {
   display: inline-block;
   float: left;
   padding: 5px;
@@ -23,7 +27,7 @@
 
 }
 
-.tools {
+.table-panel .table-title .tools {
   display: inline-block;
   float: right;
   padding: 5px;
@@ -61,19 +65,3 @@
   padding: 3px;
 }
 
-
-.purple.btn {
-  color: #ffffff;
-  background-color: #8e5fa2;
-}
-
-.default.btn {
-  color: #333;
-  background-color: #E5E5E5;
-}
-
-.default.btn:hover, .default.btn:focus, .default.btn:active, .default.btn.active {
-
-  background-color: lightgray;
-  cursor: pointer;
-}
