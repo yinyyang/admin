@@ -1,19 +1,23 @@
 
-<div class="modal-header">
- <span class="modal-title">User Detail</span>
-  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-
-  </button>
+<div class="view-header">
+ <span class="view-title">User Detail</span>
 </div>
-<div class="modal-body">
-  <p>
-  {{user.id}}
-  </p>
-  <P>{{user.name}}</P>
-  <P>{{user.username}}</P>
 
-</div>
-<div class="modal-footer">
-  <button type="button" class="btn default" (click)="modal.close('Close click')">Close</button>
-  <button type="button" class="btn grass-green">Save</button>
+<div class="view-content">
+  <div class="mr-2">id</div>
+  <div [hidden]="isEdit"><a (click)="edit()" >
+    <li class="glyphicon glyphicon-pencil edit-icon"></li>
+  </a>
+  </div>
+  <span>:</span>
+  <div class=""  [hidden]="isEdit">
+   {{id}}
+
+  </div>
+
+
+  <div class="" [hidden]="isEdit==false">
+    <input type="text" [(ngModel)]="id" class="mr-2"   (keydown)="($event.which === 13)?modify():0">
+  </div>
+
 </div>

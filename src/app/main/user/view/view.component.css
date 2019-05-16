@@ -1,2 +1,35 @@
+.view-header {
+  border-bottom: 1px solid #EFEFEF;
+  padding: 0;
+  background: #95A5A6;
+  border-radius: 0;
+}
 
+.view-title{
+  font-weight: 300;
+  margin: 2px;
+  font-size: 1rem;
+  color: #EFEFEF;
+}
 
+.view-content{
+  display: inline-flex;
+  font-size: 1rem;
+}
+
+.view-content .edit-icon{
+  color: #facb38;
+}
+
+.view-content input{
+  text-align: center;
+  width: 5rem;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px rgba(0,0,0,.2);
+}
+
+.view-content button{
+  border-radius: 0;
+  font-size: 10px;
+}

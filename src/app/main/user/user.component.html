@@ -24,7 +24,7 @@
     <th scope="col">Email</th>
     <th scope="col">Phone</th>
     <th scope="col">WebSite</th>
-    <th></th>
+
 
   </tr>
   </thead>
@@ -32,22 +32,22 @@
   <tr *ngFor="let user of users">
 
     <td>{{user.id}}</td>
-    <td>{{user.name}}</td>
+    <td><a  class="td-link" [routerLink]="['view',user.id]">{{user.name}}</a></td>
     <td>{{user.username}}</td>
     <td>{{user.email}}</td>
     <td>{{user.phone}}</td>
     <td>{{ user.website }}</td>
 
-    <td>
-      <a class="btn  default" (click)="view(user)">
-        <li class="glyphicon glyphicon-file"></li>
-        View</a>
-      <a class="btn default">
-        <li class="glyphicon glyphicon-edit"></li>
-        Edit</a>
-      <a class="btn  default">
-        <li class="glyphicon glyphicon-trash"></li>
-        Delete</a></td>
+<!--    <td>-->
+<!--      <a class="btn  default" [routerLink]="['view',user.id]" [queryParams]="{'user':user}">-->
+<!--        <li class="glyphicon glyphicon-file"></li>-->
+<!--        View</a>-->
+<!--      <a class="btn default">-->
+<!--        <li class="glyphicon glyphicon-edit"></li>-->
+<!--        Edit</a>-->
+<!--      <a class="btn  default">-->
+<!--        <li class="glyphicon glyphicon-trash"></li>-->
+<!--        Delete</a></td>-->
   </tr>
 
 
@@ -59,4 +59,3 @@
 </div>
 
 </div>
-

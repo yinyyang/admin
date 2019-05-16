@@ -1,0 +1,19 @@
+
+<div class="modal-header">
+  <span class="modal-title">User Detail</span>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+
+  </button>
+</div>
+<div class="modal-body">
+  <p>
+    {{user.id}}
+  </p>
+  <P>{{user.name}}</P>
+  <P>{{user.username}}</P>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn default" (click)="modal.close('Close click')">Close</button>
+  <button type="button" class="btn grass-green">Save</button>
+</div>

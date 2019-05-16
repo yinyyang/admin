@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {UserService} from './user.service';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {ViewComponent} from './view/view.component';
+import {ModalComponent} from "./modal/modal.component";
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -34,9 +35,10 @@ export class UserComponent implements OnInit {
     console.log('当前页:'+e);
   }
 
-  view(user) {
+  modal(user) {
     console.log(user);
-    const viewUserRef = this.modalService.open(ViewComponent);
-    viewUserRef.componentInstance.user = user;
+    const modalUserRef = this.modalService.open(ModalComponent);
+    modalUserRef.componentInstance.user = user;
+
   }
 }

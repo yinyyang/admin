@@ -1,5 +1,4 @@
 .table-panel{
-  min-height: 96%;
   border: 1px solid #95A5A6;
   overflow: hidden;
 }
@@ -65,3 +64,6 @@
   padding: 3px;
 }
 
+.table .td-link{
+  color: inherit;
+}

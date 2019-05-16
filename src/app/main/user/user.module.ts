@@ -6,14 +6,17 @@ import {PaginationComponent} from '../pagination/pagination.component';
 import {TableshowDirective} from '../../directive/tableshow.directive';
 import {FormsModule} from '@angular/forms';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
-  declarations: [  UserComponent, TableshowDirective, PaginationComponent, ViewComponent],
+  declarations: [  UserComponent, TableshowDirective, PaginationComponent, ViewComponent, ModalComponent],
   imports: [
     CommonModule,
     FormsModule,
-    NgbModalModule
+    NgbModalModule,
+    RouterModule
   ],
-  entryComponents: [ViewComponent]
+  entryComponents: [ModalComponent]
 })
 export class UserModule { }

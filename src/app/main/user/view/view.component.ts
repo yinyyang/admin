@@ -1,5 +1,6 @@
 import { Component, OnInit , Input} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-user-view',
@@ -8,10 +9,29 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class ViewComponent implements OnInit {
 
-  @Input() user: any;
-  constructor(private modal: NgbActiveModal) { }
+    id: any;
+    user:any
+    isEdit: boolean = false;
+  constructor(private  activateRoute : ActivatedRoute) {
+    activateRoute.params.subscribe(
+      params=>{
+        console.log(params);
+        this.id = params.id;
+
+      }
+
+    )
+
+  }
 
   ngOnInit() {
   }
 
+  edit() {
+  this.isEdit = true;
+  }
+
+  modify(){
+    this.isEdit =false;
+  }
 }

@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {MainComponent} from './main.component';
 import {MainGuard} from './main.guard';
 import {UserComponent} from './user/user.component';
+import {ViewComponent} from "./user/view/view.component";
 
 const routes: Routes = [
   {
@@ -11,7 +12,12 @@ const routes: Routes = [
     canActivate: [MainGuard],
     children: [{
       path: 'user',
-      component: UserComponent
+      component: UserComponent,
+
+
+    }, {
+      path: 'user/view/:id',
+      component: ViewComponent,
     }]
   }];
 
