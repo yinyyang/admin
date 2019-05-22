@@ -10,7 +10,10 @@ const routes: Routes = [
     path: 'main',
     component: MainComponent,
     canActivate: [MainGuard],
-    children: [{
+    children: [
+      //default url
+      { path:'',pathMatch: 'full',redirectTo: 'user' }
+      ,{
       path: 'user',
       component: UserComponent,
 
@@ -18,7 +21,8 @@ const routes: Routes = [
     }, {
       path: 'user/view/:id',
       component: ViewComponent,
-    }]
+    },
+      { path:'**',redirectTo: 'user' }]
   }];
 
 @NgModule({

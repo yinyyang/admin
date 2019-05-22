@@ -8,9 +8,11 @@ import {FormsModule} from '@angular/forms';
 import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './modal/modal.component';
 import {RouterModule} from "@angular/router";
+import { ListComponent } from './list/list.component';
+import {UserRoutingModule} from "./user-routing.module";
 
 @NgModule({
-  declarations: [  UserComponent, TableshowDirective, PaginationComponent, ViewComponent, ModalComponent],
+  declarations: [  UserComponent, TableshowDirective, PaginationComponent, ViewComponent, ModalComponent, ListComponent],
   imports: [
     CommonModule,
     FormsModule,
