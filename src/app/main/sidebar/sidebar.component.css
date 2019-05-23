@@ -1,7 +1,25 @@
-.side_bar{
+.side-bar{
   z-index: 9900;
   position: absolute;
   height: 100%;
   width: 15%;
   background: #364150;
+  color: #B4BCC8;
+  font-size: 1.2rem;
+}
+
+.side-bar ul{
+  list-style: none;
+}
+
+.side-bar ul > li > a > i {
+  top: 2px;
+  margin-left: 1px;
+  margin-right: 4px;
+}
+
+.side-bar ul li .arrow{
+  color: #B4BCC8;
+  font-size: 0.7rem;
+
 }

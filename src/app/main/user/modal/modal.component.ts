@@ -8,7 +8,7 @@ import {NgbActiveModal} from "@ng-bootstrap/ng-bootstrap";
 })
 export class ModalComponent implements OnInit {
   @Input() user: any;
-  constructor(private modal: NgbActiveModal) { }
+  constructor(public modal: NgbActiveModal) { }
 
   ngOnInit() {
   }

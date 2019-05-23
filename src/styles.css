@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~glyphicons-only-bootstrap/css/bootstrap.css";
+@import "~@icon/linea-arrows/linea-arrows.css";
 @import "~tooltips/dist/tooltips.min.css";
 @import "assets/css/component.css";
 html,body {
