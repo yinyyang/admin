@@ -7,7 +7,9 @@
   color: #B4BCC8;
   font-size: 1.2rem;
 }
-
+.side-bar .menu{
+  margin: 1rem;
+}
 .side-bar ul{
   list-style: none;
 }
@@ -18,8 +20,7 @@
   margin-right: 4px;
 }
 
-.side-bar ul li .arrow{
-  color: #B4BCC8;
-  font-size: 0.7rem;
+.side-bar ul > li > a > i:last-child {
+  font-weight: bold;
 
 }

@@ -5,7 +5,7 @@ import {MainGuard} from './main.guard';
 import {UserComponent} from './user/user.component';
 import {ViewComponent} from "./user/view/view.component";
 
-const routes: Routes = [
+const mainRoutes: Routes = [
   {
     path: 'main',
     component: MainComponent,
@@ -26,7 +26,7 @@ const routes: Routes = [
   }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(mainRoutes)],
   exports: [RouterModule]
 })
 export class MainRoutingModule {
