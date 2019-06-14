@@ -16,10 +16,14 @@
   top: 2px;
   margin-left: 1px;
   margin-right: 4px;
+  font-size:0.9rem;
 }
 
-.side-bar ul li .arrow{
-  color: #B4BCC8;
-  font-size: 0.7rem;
+.side-bar ul li a .arrow{
+  float: right;
+  font-size: 1.2rem;
+}
 
+ .active ul{
+  display:block !important;
 }

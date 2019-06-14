@@ -1,29 +1,16 @@
 <div class="side-bar">
 <ul class="menu">
-  <li>
+  <li *ngFor="let n of menuList" (click)="select(n.name)" [ngClass]="{active:isActive(n.name)}">
     <a>
       <i class="glyphicon glyphicon-home"></i>
-      <span class="title">Dashboard</span>
+      <span class="title">{{n.name}}</span>
       <span class="selected"></span>
-      <i class="lar lar-arrows-left"></i>
+      <i class="arrow lar" [ngClass]="{'lar-arrows-left':isActive(n.name)===false,'lar-arrows-down':isActive(n.name)}"></i>
     </a>
 
-    <ul>
-      <li>1</li>
-      <li>2</li>
-    </ul>
-  </li>
-  <li>
-    <a>
-      <i class="glyphicon glyphicon-home"></i>
-      <span class="title">User</span>
-      <span class="selected"></span>
-      <i class="lar lar-arrows-left"></i>
-    </a>
+    <ul style="display: none">
+      <li *ngFor="let child of n.subMenu">{{child}}</li>
 
-    <ul>
-      <li>1</li>
-      <li>2</li>
     </ul>
   </li>
 </ul>
