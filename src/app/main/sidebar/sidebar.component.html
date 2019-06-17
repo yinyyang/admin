@@ -1,15 +1,22 @@
 <div class="side-bar">
 <ul class="menu">
-  <li *ngFor="let n of menuList" (click)="select(n.name)" [ngClass]="{active:isActive(n.name)}">
-    <a>
+  <li *ngFor="let n of menuList"  [ngClass]="{active:isActive(n.name)}">
+    <a (click)="select(n.name)">
       <i class="glyphicon glyphicon-home"></i>
       <span class="title">{{n.name}}</span>
-      <span class="selected"></span>
-      <i class="lar lar-arrows-left"></i>
+      <i class="lar" [ngClass]="{'lar-arrows-left':isActive(n.name)==false,'lar-arrows-down':isActive(n.name)==true}"></i>
     </a>
 
     <ul style="display: none">
-      <li *ngFor="let child of n.subMenu">{{child}}</li>
+      <li *ngFor="let child of n.subMenu">
+
+        <a [routerLink]="[child.url]">
+          <i class="glyphicon glyphicon-user"></i>
+          <span class="title">{{child.name}}</span>
+
+        </a>
+
+      </li>
 
     </ul>
   </li>

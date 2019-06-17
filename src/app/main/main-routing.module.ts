@@ -4,6 +4,7 @@ import {MainComponent} from './main.component';
 import {MainGuard} from './main.guard';
 import {UserComponent} from './user/user.component';
 import {ViewComponent} from "./user/view/view.component";
+import {RoleComponent} from "./role/role.component";
 
 const mainRoutes: Routes = [
   {
@@ -21,7 +22,10 @@ const mainRoutes: Routes = [
     }, {
       path: 'user/view/:id',
       component: ViewComponent,
-    },
+    },{
+        path: 'role',
+        component: RoleComponent,
+      },
       { path:'**',redirectTo: 'user' }]
   }];
 

@@ -12,13 +12,15 @@ import { MidcontainerComponent } from './midcontainer/midcontainer.component';
 import { ContentbarComponent } from './contentbar/contentbar.component';
 import {FormsModule} from "@angular/forms";
 import {UserModule} from './user/user.module';
+import {RoleModule} from "./role/role.module";
 
 @NgModule({
   declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent],
   imports: [
     CommonModule,
     MainRoutingModule,
-    UserModule
+    UserModule,
+    RoleModule
   ],
   providers: [MainGuard]
 })

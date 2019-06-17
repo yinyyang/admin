@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
    menuList:any;
    selected:any;
+   @Output()
+   menuTitle: EventEmitter<any> = new EventEmitter();
   constructor() {
     this.menuList = [
       {
-        "name": "Angular",
-        "subMenu": ["Anguler 1", "Angular 2"]
+        "name": "DashBoard",
+        "subMenu": [{"name":"User Management","url":"/main/user"},{"name":"Role Management","url":"/main/role"}]
       },
       {
         "name": "Javascript",
@@ -34,6 +36,11 @@ export class SidebarComponent implements OnInit {
     this.selected = (this.selected === item ? null : item);
   }
   isActive(item){
+
     return this.selected === item;
+  }
+
+  setContentbarTitle(item){
+    this.menuTitle.emit(item);
   }
 }
