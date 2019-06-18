@@ -1,4 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {ContentbarService} from "./contentbar.service";
 
 @Component({
   selector: 'app-sidebar',
@@ -10,7 +11,7 @@ export class SidebarComponent implements OnInit {
    selected:any;
    @Output()
    menuTitle: EventEmitter<any> = new EventEmitter();
-  constructor() {
+  constructor(private contentbarService:ContentbarService) {
     this.menuList = [
       {
         "name": "DashBoard",
@@ -41,6 +42,7 @@ export class SidebarComponent implements OnInit {
   }
 
   setContentbarTitle(item){
-    this.menuTitle.emit(item);
+    console.log(item);
+   this.contentbarService.sendMessage(item);
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ContentbarService} from "../sidebar/contentbar.service";
 
 @Component({
   selector: 'app-contentbar',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentbarComponent implements OnInit {
 
-  constructor() { }
+   title:String;
+   url:String;
+  constructor(private contentbarService: ContentbarService) {
+  }
 
   ngOnInit() {
+    this.contentbarService.getMessage().subscribe((message: any) =>{
+
+        console.log(message);
+      console.log("contentbar");
+      this.title=message.name;
+      this.url=message.url;
+    });
   }
+
+
 
 }

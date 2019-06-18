@@ -12,4 +12,7 @@ export class ContentComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeTitle($event) {
+    console.log($event.target);
+  }
 }

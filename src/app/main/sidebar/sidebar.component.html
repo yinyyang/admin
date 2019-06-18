@@ -10,7 +10,7 @@
     <ul style="display: none">
       <li *ngFor="let child of n.subMenu">
 
-        <a [routerLink]="[child.url]">
+        <a [routerLink]="[child.url]" (click)="setContentbarTitle(child)">
           <i class="glyphicon glyphicon-user"></i>
           <span class="title">{{child.name}}</span>
 
