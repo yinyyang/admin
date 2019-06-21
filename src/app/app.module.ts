@@ -7,12 +7,14 @@ import {LoginModule} from './login/login.module';
 import {MainModule} from './main/main.module';
 import { Css3loadingComponent } from './anminations/css3loading/css3loading.component';
 import { GifloadingComponent } from './anminations/gifloading/gifloading.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Css3loadingComponent,
-    GifloadingComponent
+    GifloadingComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

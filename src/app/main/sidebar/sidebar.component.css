@@ -26,7 +26,8 @@
   line-height: 2rem;
 }
 .side-bar > ul  > li > a:hover{
-  background: #3e4b5c !important
+  background: #3e4b5c !important;
+  cursor: pointer;
 }
 
 .side-bar ul > li > a > i {

@@ -1,0 +1,18 @@
+ul{
+  position: absolute;
+  margin: 2rem;
+  border: 1px solid #E5E5E5;
+  width: 10rem;
+background: #E5E5E5;
+}
+
+ul:before{
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid #E5E5E5;
+  border-right: 7px solid transparent;
+  color: white;
+  content: '';
+}
