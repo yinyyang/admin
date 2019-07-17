@@ -20,7 +20,7 @@ const mainRoutes: Routes = [
 
 
     }, {
-      path: 'user/view/:id',
+      path: 'user/:id',
       component: ViewComponent,
     },{
         path: 'role',

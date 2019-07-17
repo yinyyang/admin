@@ -25,6 +25,7 @@
     "core-js": "^2.5.4",
     "glyphicons-only-bootstrap": "^1.0.1",
     "install": "^0.12.2",
+    "json-schema-faker-cli": "^2.0.4",
     "json-server": "^0.15.0",
     "ng2-validation": "^4.2.0",
     "npm": "^6.9.0",

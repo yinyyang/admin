@@ -10,7 +10,11 @@ export class UserService {
   constructor() { }
 
   getUsers(): any {
-   return   ajax(this.API_URL+'/users');
+   return   ajax(this.API_URL+'/user');
 
   }
+
+  getOneUser(id): any {
+  return   ajax(this.API_URL+'/user/'+id);
+}
 }

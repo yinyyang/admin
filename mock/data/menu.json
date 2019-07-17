@@ -1,0 +1,14 @@
+[
+  {
+    "name": "DashBoard",
+    "subMenu": [{"name":"User Management","url":"/main/user"},{"name":"Role Management","url":"/main/role"}]
+  },
+  {
+    "name": "Javascript",
+    "subMenu": ["Jquery", "Ajax"]
+  },
+  {
+    "name": "Bootstrap",
+    "subMenu": ["BootStrap 2", "BootStrap 3"]
+  }
+]

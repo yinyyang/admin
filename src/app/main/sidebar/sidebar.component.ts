@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ContentbarService} from "./contentbar.service";
+import {SidebarService} from "./sidebar.service";
 
 @Component({
   selector: 'app-sidebar',
@@ -11,24 +12,15 @@ export class SidebarComponent implements OnInit {
    selected:any;
    @Output()
    menuTitle: EventEmitter<any> = new EventEmitter();
-  constructor(private contentbarService:ContentbarService) {
-    this.menuList = [
-      {
-        "name": "DashBoard",
-        "subMenu": [{"name":"User Management","url":"/main/user"},{"name":"Role Management","url":"/main/role"}]
-      },
-      {
-        "name": "Javascript",
-        "subMenu": ["Jquery", "Ajax"]
-      },
-      {
-        "name": "Bootstrap",
-        "subMenu": ["BootStrap 2", "BootStrap 3"]
+  constructor(private contentbarService:ContentbarService,private sidebarService:SidebarService) {
+    sidebarService.getMenu().subscribe(res => {
+      console.log(res.response);
+      if (res.status === 200) {
+        this.menuList = res.response;
       }
-     ]
 
+    });
   }
-
   ngOnInit() {
   }
 

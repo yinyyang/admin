@@ -1,11 +1,13 @@
-var firstRoute  = require('./db.json');
-var secondRoute = require('./test.json');
+var db  = require('./db.json');
+var user = require('./data/user.json');
+var menu = require('./data/menu.json');
 // and so on
 
 module.exports = function() {
   return {
-    firstRoute  : firstRoute,
-    secondRoute : secondRoute
+    db  : db,
+    user : user,
+    menu : menu
 // and so on
   }
 }

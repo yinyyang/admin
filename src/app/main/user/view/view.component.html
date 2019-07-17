@@ -3,21 +3,21 @@
  <span class="view-title">User Detail</span>
 </div>
 
-<div class="view-content">
-  <div class="mr-2">id</div>
+<div *ngIf="user" class="view-content">
+  <div class="mr-2">name</div>
   <div [hidden]="isEdit"><a (click)="edit()" >
     <li class="glyphicon glyphicon-pencil edit-icon"></li>
   </a>
   </div>
   <span>:</span>
   <div class=""  [hidden]="isEdit">
-   {{id}}
+   {{user.name}}
 
   </div>
 
 
   <div class="" [hidden]="isEdit==false">
-    <input type="text" [(ngModel)]="id" class="mr-2"   (keydown)="($event.which === 13)?modify():0">
+    <input type="text" [(ngModel)]="user.name" class="mr-2"   (keydown)="($event.which === 13)?modify():0">
   </div>
 
 </div>
