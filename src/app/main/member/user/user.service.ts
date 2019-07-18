@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {ajax} from 'rxjs/internal/observable/dom/ajax';
-import {environment} from "../../../environments/environment";
+import {environment} from "../../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'

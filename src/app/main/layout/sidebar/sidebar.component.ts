@@ -10,8 +10,6 @@ import {SidebarService} from "./sidebar.service";
 export class SidebarComponent implements OnInit {
    menuList:any;
    selected:any;
-   @Output()
-   menuTitle: EventEmitter<any> = new EventEmitter();
   constructor(private contentbarService:ContentbarService,private sidebarService:SidebarService) {
     sidebarService.getMenu().subscribe(res => {
       console.log(res.response);

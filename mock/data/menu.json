@@ -1,7 +1,7 @@
 [
   {
-    "name": "DashBoard",
-    "subMenu": [{"name":"User Management","url":"/main/user"},{"name":"Role Management","url":"/main/role"}]
+    "name": "Member",
+    "subMenu": [{"name":"User Management","url":"/main//member/user"},{"name":"Role Management","url":"/main/member/role"}]
   },
   {
     "name": "Javascript",

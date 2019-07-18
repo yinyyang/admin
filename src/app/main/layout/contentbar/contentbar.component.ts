@@ -17,7 +17,6 @@ export class ContentbarComponent implements OnInit {
     this.contentbarService.getMessage().subscribe((message: any) =>{
 
         console.log(message);
-      console.log("contentbar");
       this.title=message.name;
       this.url=message.url;
     });
