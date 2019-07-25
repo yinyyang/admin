@@ -9,9 +9,10 @@ import {PaginationComponent} from "../pagination/pagination.component";
 import {FormsModule} from "@angular/forms";
 import {ViewComponent} from "./user/view/view.component";
 import {TableshowDirective} from "../directive/tableshow.directive";
+import {ModalComponent} from "./user/modal/modal.component";
 
 @NgModule({
-  declarations: [ MemberComponent,UserComponent,ViewComponent, RoleComponent, PaginationComponent,TableshowDirective],
+  declarations: [ MemberComponent,UserComponent,ModalComponent,ViewComponent, RoleComponent, PaginationComponent,TableshowDirective],
   imports: [
     CommonModule,
     MemberRoutingModule,

@@ -37,7 +37,7 @@
 }
 
 
-.side-bar ul > li > a > i:last-child {
+.side-bar ul > li > a > .lar {
   font-weight: bold;
   float:right;
   font-size: 1.2rem;
@@ -53,4 +53,25 @@
 }
 .side-bar > ul  > li > ul >li:hover{
   background: #3e4b5c !important
+}
+
+@media screen and (max-width: 560px) {
+
+  .side-bar{
+    width: 8%;
+  }
+  .side-bar >ul > li> a >span , .lar{
+    display: none;
+  }
+
+  .side-bar ul> .active >ul{
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 25px;
+   /*background: #364150;*/
+    background: white;
+    width: 11rem;
+  }
+
+
 }

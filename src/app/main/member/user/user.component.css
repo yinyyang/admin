@@ -16,6 +16,7 @@
   height: 95%;
   width: 98%;
   margin: auto;
+  overflow:hidden;
 }
 
 .table-panel .table-title  .title {
