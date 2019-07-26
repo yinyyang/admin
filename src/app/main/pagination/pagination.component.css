@@ -29,7 +29,7 @@
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 900px) {
  .info {
    display: none!important;
  }

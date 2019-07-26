@@ -30,7 +30,7 @@ export class SidebarComponent implements OnInit {
   }
 
   setContentbarTitle(item){
-    if(window.innerWidth<560) {
+    if(window.innerWidth<900) {
       this.selected = (this.selected === item ? null : item);
     }
    this.contentbarService.sendMessage(item);

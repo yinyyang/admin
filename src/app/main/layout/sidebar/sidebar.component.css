@@ -55,7 +55,7 @@
   background: #3e4b5c !important
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 900px) {
 
   .side-bar{
     width: 8%;
