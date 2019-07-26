@@ -29,4 +29,18 @@
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 560px) {
+ .info {
+   display: none!important;
+ }
+  .show-records{
+    display: none!important;
+  }
+  .bar{
+    display: block!important;
+    text-align: center;
+    float: none!important;
+  }
+}
+
 

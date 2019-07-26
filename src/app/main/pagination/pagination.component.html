@@ -1,7 +1,7 @@
 <div class="page-bar">
 
     <div class="info d-inline">Showing 1 to 5 of 25 entries</div>
-    <div class="d-inline p-3">
+    <div class="d-inline p-3 show-records">
     <span class="mr-2">Show</span>
   <select id="inputState" class="form-control" [(ngModel)]="pageSize">
     <option>10</option>
@@ -10,7 +10,7 @@
   </select>
       <span class="ml-2"> entries</span>
   </div>
-  <div class="d-inline float-right">
+  <div class="d-inline float-right bar">
 
       <ul class="pagination">
         <li  class="page-item" [ngClass]="{'disabled':this.currentPage==1}">

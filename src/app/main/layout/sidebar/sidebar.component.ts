@@ -23,16 +23,16 @@ export class SidebarComponent implements OnInit {
   }
 
   select(item){
-
     this.selected = (this.selected === item ? null : item);
   }
   isActive(item){
-
     return this.selected === item;
   }
 
   setContentbarTitle(item){
-    console.log(item);
+    if(window.innerWidth<560) {
+      this.selected = (this.selected === item ? null : item);
+    }
    this.contentbarService.sendMessage(item);
   }
 }

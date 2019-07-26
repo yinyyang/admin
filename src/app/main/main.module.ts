@@ -10,10 +10,11 @@ import {FooterComponent} from "./layout/footer/footer.component";
 import {ContentComponent} from "./layout/content/content.component";
 import {MidcontainerComponent} from "./layout/midcontainer/midcontainer.component";
 import {ContentbarComponent} from "./layout/contentbar/contentbar.component";
+import { ResizeDirective } from './directive/resize.directive';
 
 
 @NgModule({
-  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent],
+  declarations: [MainComponent, HeaderComponent, SidebarComponent, FooterComponent, ContentComponent, MidcontainerComponent, ContentbarComponent, ResizeDirective],
   imports: [
     CommonModule,
     MainRoutingModule

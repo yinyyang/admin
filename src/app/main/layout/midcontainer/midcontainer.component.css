@@ -1,5 +1,11 @@
-.mid_container{
+.mid-container{
   height: 100%;
   background: #fff;
   overflow: hidden;
+}
+
+@media screen and (max-width: 560px) {
+  .mid-container{
+    overflow: scroll;
+  }
 }

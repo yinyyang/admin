@@ -1,5 +1,6 @@
 <div class="side-bar">
-<ul class="menu">
+<!--<ul class="menu"  [appResize]="this" itemParam="{{item}}">-->
+  <ul class="menu">
   <li *ngFor="let n of menuList"  [ngClass]="{active:isActive(n.name)}">
     <a (click)="select(n.name)">
       <i class="glyphicon glyphicon-home"></i>

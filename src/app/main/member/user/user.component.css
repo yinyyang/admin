@@ -1,6 +1,6 @@
 .table-panel{
   border: 1px solid #95A5A6;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .table-panel .table-title {
   background: #95A5A6;
@@ -67,4 +67,10 @@
 
 .table .td-link{
   color: inherit;
+}
+
+@media screen and (max-width: 560px) {
+  .table-panel .table-body{
+    overflow: scroll;
+  }
 }
