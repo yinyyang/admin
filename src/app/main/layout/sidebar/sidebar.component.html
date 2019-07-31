@@ -2,7 +2,7 @@
 <!--<ul class="menu"  [appResize]="this" itemParam="{{item}}">-->
   <ul class="menu">
   <li *ngFor="let n of menuList"  [ngClass]="{active:isActive(n.name)}">
-    <a (click)="select(n.name)">
+    <a (click)="select(n.name) ; setContentbarTitleLeve_1(n)">
       <i class="glyphicon glyphicon-home"></i>
       <span class="title">{{n.name}}</span>
       <i class="lar" [ngClass]="{'lar-arrows-left':isActive(n.name)==false,'lar-arrows-down':isActive(n.name)==true}"></i>
@@ -11,7 +11,7 @@
     <ul style="display: none">
       <li *ngFor="let child of n.subMenu">
 
-        <a [routerLink]="[child.url]" (click)="setContentbarTitle(child)">
+        <a [routerLink]="[child.url]" (click)="setContentbarTitleLeve_2(child)">
           <i class="glyphicon glyphicon-user"></i>
           <span class="title">{{child.name}}</span>
 

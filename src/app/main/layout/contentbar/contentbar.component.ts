@@ -9,16 +9,19 @@ import {ContentbarService} from "../sidebar/contentbar.service";
 export class ContentbarComponent implements OnInit {
 
    title:String;
+   sub_title:String;
    url:String;
   constructor(private contentbarService: ContentbarService) {
   }
 
   ngOnInit() {
-    this.contentbarService.getMessage().subscribe((message: any) =>{
+    this.contentbarService.getMessage().subscribe((message: any) => {
+      if (message.title != undefined) {
+        this.title = message.title;
+      }
+      this.sub_title = message.sub_title;
+      this.url = message.url;
 
-        console.log(message);
-      this.title=message.name;
-      this.url=message.url;
     });
   }
 

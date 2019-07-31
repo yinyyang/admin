@@ -13,7 +13,7 @@ import { TestComponent } from './test/test.component';
     AppComponent,
     Css3loadingComponent,
     GifloadingComponent,
-    TestComponent
+    TestComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@
   height: 100%;
   width: 100%;
   display: block;
+
 }
 
 .side-bar  ul > li {
@@ -60,17 +61,54 @@
   .side-bar{
     width: 8%;
   }
+  .side-bar > ul > li> a{
+    text-align: center;
+  }
   .side-bar >ul > li> a >span , .lar{
     display: none;
   }
 
   .side-bar ul> .active >ul{
     position: absolute;
-    margin-top: -32px;
-    margin-left: 25px;
+    margin-top: -1.6rem;
+    margin-left: 1.55rem;
    /*background: #364150;*/
-    background: white;
+    background: #3e4b5c;
     width: 11rem;
+  }
+  .side-bar ul> .active >ul:before{
+
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    display: inline-block !important;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #ffffff;
+    border-bottom: 10px solid transparent;
+    content: '';
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .side-bar ul> .active >ul{
+    margin-top: -2.15rem;
+    margin-left: 3.45rem;
+
+  }
+
+}
+@media screen and (max-width: 567px) {
+
+
+  .side-bar ul> .active >ul{
+    margin-top: -1.6rem;
+    margin-left: 1.55rem;
+
   }
 
 

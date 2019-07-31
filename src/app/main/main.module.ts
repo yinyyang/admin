@@ -11,6 +11,7 @@ import {ContentComponent} from "./layout/content/content.component";
 import {MidcontainerComponent} from "./layout/midcontainer/midcontainer.component";
 import {ContentbarComponent} from "./layout/contentbar/contentbar.component";
 import { ResizeDirective } from './directive/resize.directive';
+import {TableshowDirective} from "./directive/tableshow.directive";
 
 
 @NgModule({

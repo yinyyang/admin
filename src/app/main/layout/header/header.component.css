@@ -50,6 +50,7 @@
   border: 1px solid #e7eaf0 ;
   width:8rem;
   box-shadow: 5px 5px rgba(102, 102, 102, 0.1);
+  z-index: 9999;
 }
 
 .top-menu ul>li>ul:before{

@@ -14,9 +14,10 @@ const mainRoutes: Routes = [
       {
       path: 'member',
       loadChildren:'./member/member.module#MemberModule'
-
-
-    }]
+    },{
+        path: 'ui',
+        loadChildren:'./ui/ui.module#UiModule'
+      }]
   }];
 
 @NgModule({

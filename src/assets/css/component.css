@@ -1,72 +1,42 @@
-/*button*/
-.default.btn {
-  color: #333;
-  background-color: #E5E5E5;
+/**
+panel
+ */
+.panel{
+  border: 1px solid #95A5A6;
+  /*overflow: hidden;*/
 }
-
-.purple.btn {
-  color: #ffffff;
-  background-color: #8e5fa2;
-}
-
-
-.grass-green.btn {
-  color: #EFEFEF;
-  background-color: #95A5A6;
-}
-.default.btn:hover, .default.btn:focus, .default.btn:active, .default.btn.active {
-
-  background-color: lightgray;
-  cursor: pointer;
-}
-
-.grass-green.btn:hover, .grass-green.btn:focus, .grass-green.btn:active, .grass-green.btn.active {
-
-  background-color: #9EA9A7;
-  cursor: pointer;
-}
-
-/*modal*/
-
-.modal-open{
-  overflow: auto;
-}
-.modal-header {
-  border-bottom: 1px solid #EFEFEF;
-  padding: 0;
+.panel .panel-title {
   background: #95A5A6;
-  border-radius: 0;
+  border-bottom: 0;
+  padding: 0;
+  margin-bottom: 0;
+  color: #fff;
+  height: 2rem;
+
 }
 
-.modal-header .close{
-  margin-top: 5px;
-  background-repeat: no-repeat;
-  outline: none;
-  background-image: url(/assets/imgs/icon/portlet-remove-icon-white.png) !important;
+
+
+.panel .panel-title  .title {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+
+
 }
 
-.modal-title{
-  font-weight: 300;
-  margin: 2px;
-  font-size: 1rem;
-  color: #EFEFEF;
-}
-.modal-content{
-  border-radius: 0;
+.panel .panel-title .tools {
+  display: inline-block;
+  float: right;
+  padding: 5px;
+
 }
 
-.modal-footer{
-  padding: 0.4rem;
+.panel-title .tools a{
+  color: #ffffff;
 }
-.modal-footer .btn {
-  border-radius: 0;
-  border-width: 0;
-  font-size: 0.7rem;
-  outline: none !important;
-  background-image: none !important;
-  filter: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
+
+.panel-title .tools a:hover{
+  cursor: pointer;
 }
+

@@ -29,10 +29,17 @@ export class SidebarComponent implements OnInit {
     return this.selected === item;
   }
 
-  setContentbarTitle(item){
+  //first level title
+  setContentbarTitleLeve_1(item){
+      let message={title:item.name};
+    this.contentbarService.sendMessage(message);
+  }
+//second level title
+  setContentbarTitleLeve_2(item){
     if(window.innerWidth<900) {
       this.selected = (this.selected === item ? null : item);
     }
-   this.contentbarService.sendMessage(item);
+    let message={sub_title:item.name,url:item.url};
+   this.contentbarService.sendMessage(message);
   }
 }

@@ -8,15 +8,17 @@ import { RoleComponent } from './role/role.component';
 import {PaginationComponent} from "../pagination/pagination.component";
 import {FormsModule} from "@angular/forms";
 import {ViewComponent} from "./user/view/view.component";
-import {TableshowDirective} from "../directive/tableshow.directive";
 import {ModalComponent} from "./user/modal/modal.component";
+import {TableshowDirective} from "../directive/tableshow.directive";
+import {DirectiveModule} from "../directive/directive.module";
 
 @NgModule({
-  declarations: [ MemberComponent,UserComponent,ModalComponent,ViewComponent, RoleComponent, PaginationComponent,TableshowDirective],
+  declarations: [ MemberComponent,UserComponent,ModalComponent,ViewComponent, RoleComponent, PaginationComponent],
   imports: [
     CommonModule,
     MemberRoutingModule,
-    FormsModule
+    FormsModule,
+    DirectiveModule
   ]
 })
 export class MemberModule { }
