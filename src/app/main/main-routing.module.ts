@@ -17,6 +17,9 @@ const mainRoutes: Routes = [
     },{
         path: 'ui',
         loadChildren:'./ui/ui.module#UiModule'
+      },{
+        path: 'icon',
+        loadChildren:'./icon/icon.module#IconModule'
       }]
   }];
 

@@ -8,7 +8,7 @@
     "subMenu": [{"name":"Form","url":"/main/ui/form"},{"name":"Table","url":"/main/ui/table"},{"name":"Panel","url":"/main/ui/panel"}]
   },
   {
-    "name": "Graph",
-    "subMenu": ["BootStrap 2", "BootStrap 3"]
+    "name": "ICON",
+    "subMenu": [{"name":"Bootstrap","url":"/main/icon/bootstrap"}]
   }
 ]
