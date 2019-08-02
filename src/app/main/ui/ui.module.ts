@@ -8,6 +8,7 @@ import { TableComponent } from './table/table.component';
 import { PanelComponent } from './panel/panel.component';
 import {FormsModule} from "@angular/forms";
 import {DirectiveModule} from "../directive/directive.module";
+import {MemberModule} from "../member/member.module";
 
 @NgModule({
   declarations: [UiComponent, FormComponent, TableComponent, PanelComponent],
@@ -15,7 +16,8 @@ import {DirectiveModule} from "../directive/directive.module";
     CommonModule,
     FormsModule,
     UiRoutingModule,
-    DirectiveModule
+    DirectiveModule,
+    MemberModule
   ]
 })
 export class UiModule { }

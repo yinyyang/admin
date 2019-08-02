@@ -13,7 +13,10 @@ import {TableshowDirective} from "../directive/tableshow.directive";
 import {DirectiveModule} from "../directive/directive.module";
 
 @NgModule({
-  declarations: [ MemberComponent,UserComponent,ModalComponent,ViewComponent, RoleComponent, PaginationComponent],
+  declarations: [MemberComponent, UserComponent, ModalComponent, ViewComponent, RoleComponent, PaginationComponent],
+  exports: [
+    UserComponent
+  ],
   imports: [
     CommonModule,
     MemberRoutingModule,
