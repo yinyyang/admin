@@ -1,0 +1,40 @@
+<div  class="tabbable-line boxless tabbable-reversed">
+  <ul class="nav nav-tabs">
+    <li class="" [ngClass]="{active:isActive('tab1')}">
+      <a href="javascript:;" (click)="select('tab1')" data-toggle="tab" aria-expanded="false">
+        Form Actions </a>
+    </li>
+    <li class="" [ngClass]="{active:isActive('tab2')}">
+      <a href="javascript:;" (click)="select('tab2')" data-toggle="tab" aria-expanded="false">
+        2 Columns </a>
+    </li>
+    <li class="" [ngClass]="{active:isActive('tab3')}">
+      <a href="javascript:;"  (click)="select('tab3')" data-toggle="tab" aria-expanded="false">
+        2 Columns Horizontal </a>
+    </li>
+    <li class="" [ngClass]="{active:isActive('tab4')}">
+      <a href="javascript:;"  (click)="select('tab4')" data-toggle="tab" aria-expanded="false">
+        2 Columns View Only </a>
+    </li>
+    <li class="" [ngClass]="{active:isActive('tab5')}">
+      <a href="javascript:;" (click)="select('tab5')" data-toggle="tab" aria-expanded="false">
+        Row Seperated </a>
+    </li>
+  </ul>
+  <div class="tab-content" [ngClass]="{hide:isActive('tab1')==false}">
+    <app-panel title="Form Actions1">1</app-panel>
+  </div>
+  <div class="tab-content" [ngClass]="{hide:isActive('tab2')==false}">
+    <app-panel title="Form Actions2">2</app-panel>
+  </div>
+  <div class="tab-content" [ngClass]="{hide:isActive('tab3')==false}">
+    <app-panel title="Form Actions3">3</app-panel>
+  </div>
+  <div class="tab-content" [ngClass]="{hide:isActive('tab4')==false}">
+    <app-panel title="Form Actions4">4</app-panel>
+  </div>
+  <div class="tab-content" [ngClass]="{hide:isActive('tab5')==false}">
+    <app-panel title="Form Actions5">5</app-panel>
+  </div>
+</div>
+
