@@ -9,9 +9,10 @@ import { PanelComponent } from './panel/panel.component';
 import {FormsModule} from "@angular/forms";
 import {DirectiveModule} from "../directive/directive.module";
 import {MemberModule} from "../member/member.module";
+import { TabpanelComponent } from './tabpanel/tabpanel.component';
 
 @NgModule({
-  declarations: [UiComponent, FormComponent, TableComponent, PanelComponent],
+  declarations: [UiComponent, FormComponent, TableComponent, PanelComponent, TabpanelComponent],
   imports: [
     CommonModule,
     FormsModule,
