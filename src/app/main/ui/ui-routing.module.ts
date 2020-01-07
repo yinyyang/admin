@@ -4,6 +4,7 @@ import {UiComponent} from "./ui.component";
 import {FormComponent} from "./form/form.component";
 import {TableComponent} from "./table/table.component";
 import {PanelComponent} from "./panel/panel.component";
+import {TabpanelComponent} from "./tabpanel/tabpanel.component";
 
 const routes: Routes = [{
   path: '',
@@ -17,6 +18,9 @@ const routes: Routes = [{
   },{
       path: 'panel',
       component: PanelComponent
+  },{
+    path: 'tabpanel',
+    component: TabpanelComponent
   }]
 }];
 

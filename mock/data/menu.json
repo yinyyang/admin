@@ -5,7 +5,7 @@
   },
   {
     "name": "UI",
-    "subMenu": [{"name":"Form","url":"/main/ui/form"},{"name":"Table","url":"/main/ui/table"},{"name":"Panel","url":"/main/ui/panel"}]
+    "subMenu": [{"name":"Form","url":"/main/ui/form"},{"name":"Table","url":"/main/ui/table"},{"name":"Panel","url":"/main/ui/panel"},{"name":"TabPanel","url":"/main/ui/tabpanel"}]
   },
   {
     "name": "ICON",
