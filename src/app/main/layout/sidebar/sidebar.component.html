@@ -1,5 +1,6 @@
 <div class="side-bar">
-<!--<ul class="menu"  [appResize]="this" itemParam="{{item}}">-->
+
+<!--&lt;!&ndash;<ul class="menu"  [appResize]="this" itemParam="{{item}}">&ndash;&gt;-->
   <ul class="menu">
   <li *ngFor="let n of menuList"  [ngClass]="{active:isActive(n.name)}">
     <a (click)="select(n.name) ; setContentbarTitleLeve_1(n)">

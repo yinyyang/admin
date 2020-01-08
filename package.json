@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "json-sever start":"node mock/server.js",
-    "start-ip":"ng serve --host 192.168.1.108",
+    "json-sever start": "node mock/server.js",
+    "start-ip": "ng serve --host 192.168.1.108",
     "start josn-server": "node ./mock/server.js",
     "start": "ng serve",
     "build": "ng build",

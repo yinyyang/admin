@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {UserService} from './user.service';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {ModalComponent} from "./modal/modal.component";
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',

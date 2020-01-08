@@ -13,12 +13,14 @@ import { TabpanelComponent } from './tabpanel/tabpanel.component';
 
 @NgModule({
   declarations: [UiComponent, FormComponent, TableComponent, PanelComponent, TabpanelComponent],
+  exports: [
+    PanelComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     UiRoutingModule,
-    DirectiveModule,
-    MemberModule
+    DirectiveModule
   ]
 })
 export class UiModule { }

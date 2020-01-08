@@ -1,9 +1,13 @@
 .page-bar {
   bottom: 0;
-  font-size: 0.68rem;
+  font-size: 0.7rem;
 
 }
 
+.page-bar  select{
+  font-size: .6rem;
+  font-weight: 500;
+}
 .page-link{
   border: none;
   color: #333333;
@@ -25,22 +29,7 @@
 .pagination {
   display: inline-flex;
 }
-.info{
-  font-size: 0.8rem;
-}
 
-@media screen and (max-width: 900px) {
- .info {
-   display: none!important;
- }
-  .show-records{
-    display: none!important;
-  }
-  .bar{
-    display: block!important;
-    text-align: center;
-    float: none!important;
-  }
-}
+
 
 

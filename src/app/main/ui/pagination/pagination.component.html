@@ -1,7 +1,13 @@
-<div class="page-bar">
 
-    <div class="info d-inline">Showing 1 to 5 of 25 entries</div>
-    <div class="d-inline p-3 show-records">
+<div class="row page-bar">
+  <!-- entries info-->
+<div class="col-2">
+    <div class="p-2">Showing 1 to 5 of 25 entries</div>
+</div>
+
+  <!-- page number drop down list-->
+  <div class="col-2">
+    <div>
     <span class="mr-2">Show</span>
   <select id="inputState" class="form-control" [(ngModel)]="pageSize">
     <option>10</option>
@@ -9,8 +15,12 @@
     <option>50</option>
   </select>
       <span class="ml-2"> entries</span>
+    </div>
   </div>
-  <div class="d-inline float-right bar">
+
+
+  <div class="col-6">
+
 
       <ul class="pagination">
         <li  class="page-item" [ngClass]="{'disabled':this.currentPage==1}">
@@ -38,11 +48,14 @@
           </a>
         </li>
       </ul>
+    </div>
 
-    <span class="m-2">Go</span>
+
+      <div class="col-2">
+    <span class="mr-2">Go</span>
       <input type="text" class="form-control"  [(ngModel)]="currentPage"  (keyup.enter)="goPage()">
     <span class="ml-2">page</span>
 
-
   </div>
 </div>
+

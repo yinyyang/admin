@@ -3,13 +3,19 @@
     <li>
       <i class="glyphicon glyphicon-home"></i>
       <a href="index.html">Home</a>
-      <i class="glyphicon glyphicon-menu-right"></i>
+
     </li>
-    <li>
+    <li *ngIf="title" class="bpt-3">
+    <i class="lar lar-arrows-right"></i>
+    </li>
+    <li class="bpt-3">
       <a href="#">{{title}}</a>
-      <i   *ngIf="sub_title" class="glyphicon glyphicon-menu-right"></i>
+
     </li>
-    <li>
+    <li *ngIf="sub_title" class="bpt-3">
+    <i    class="lar lar-arrows-right"></i>
+    </li>
+    <li class="bpt-3">
       <a [routerLink]="[url]">{{sub_title}}</a>
     </li>
   </ul>

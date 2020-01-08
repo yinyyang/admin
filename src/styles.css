@@ -4,10 +4,7 @@
 @import "~@icon/linea-arrows/linea-arrows.css";
 @import "~tooltips/dist/tooltips.min.css";
 @import "assets/css/component.css";
-html,body {
 
-  height:100%
-}
 
 body {
 
@@ -15,7 +12,8 @@ body {
   font-family: "Open Sans", sans-serif;
   padding: 0px !important;
   margin: 0px !important;
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: 300;
   direction: ltr;
 }
 

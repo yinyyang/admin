@@ -1,15 +1,13 @@
 .bar{
   background: #f7f7f7;
-  padding: 0px 20px;
-  margin: -25px -20px 0 -20px;
 }
 
 .breadcrumb{
 
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #888;
   background: none;
-  padding: .75rem 0;
+  padding: .5rem 0;
 
 }
 
@@ -17,6 +15,10 @@
   color: #888;
 }
 .breadcrumb li i{
-  padding: 5px;
-  font-size: 0.7rem;
+  padding: 3px;
+  font-size: 0.8rem;
+}
+
+.bpt-3{
+  padding-top: 3px;
 }
