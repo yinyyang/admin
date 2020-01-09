@@ -1,61 +1,33 @@
-<!--<div class="table-panel">-->
-<!--  <div class="table-title">-->
-<!--    <div class="title">-->
-<!--      <i class="glyphicon glyphicon-user mr-1"></i>-->
-<!--      <span>User Info</span>-->
-<!--    </div>-->
-<!--    <div class="tools">-->
-<!--      <a href="javascript:;" class="mr-2 tooltips-top-left" data-tooltips="Reload">-->
-<!--        <i class="glyphicon glyphicon-refresh"></i>-->
-<!--      </a>-->
-<!--      <a href="javascript:;"  appTableshow  tableId="userInfo" data-tooltips="Collapse/Expand" class="tooltips-top">-->
-<!--        <i class="glyphicon glyphicon-menu-down"></i>-->
-<!--      </a>-->
-<!--    </div>-->
-<!--  </div>-->
 <app-panel title="User Info">
-  <div  id="userInfo" class="table-body mt-3">
-    <table class="table table-striped table-bordered  table-hover table-sm table-advance text-center">
-      <thead class="">
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Name</th>
-        <th scope="col">Username</th>
-        <th scope="col">Email</th>
-        <th scope="col">Phone</th>
-        <th scope="col">WebSite</th>
+  <app-table>
 
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">WebSite</th>
 
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let user of users">
+    </tr>
+    </thead>
 
-        <td>{{user.id}}</td>
-        <td><a  class="td-link" [routerLink]="[user.id]">{{user.name}}</a></td>
-        <td>{{user.username}}</td>
-        <td>{{user.email}}</td>
-        <td>{{user.phone}}</td>
-        <td>{{ user.website }}</td>
+    <tbody>
+    <tr *ngFor="let user of users">
 
-        <!--    <td>-->
-        <!--      <a class="btn  default" [routerLink]="['view',user.id]" [queryParams]="{'user':user}">-->
-        <!--        <li class="glyphicon glyphicon-file"></li>-->
-        <!--        View</a>-->
-        <!--      <a class="btn default">-->
-        <!--        <li class="glyphicon glyphicon-edit"></li>-->
-        <!--        Edit</a>-->
-        <!--      <a class="btn  default">-->
-        <!--        <li class="glyphicon glyphicon-trash"></li>-->
-        <!--        Delete</a></td>-->
-      </tr>
+      <td>{{user.id}}</td>
+      <td><a class="td-link" [routerLink]="[user.id]">{{user.name}}</a></td>
+      <td>{{user.username}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{ user.website }}</td>
 
+    </tr>
+    </tbody>
+  </app-table>
 
-      </tbody>
-    </table>
+  <app-pagination (onLoad)="getPage($event)"></app-pagination>
 
-
-    <app-pagination (onLoad)="getPage($event)"></app-pagination>
-  </div>
 </app-panel>
-<!--</div>-->
+

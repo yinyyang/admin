@@ -1,10 +1,13 @@
-<div class="panel">
-<div class="panel-title">
-  <div class="title">
-    <i class="glyphicon glyphicon-user mr-1"></i>
+<div class="container-fluid panel">
+<div class=" row panel-title">
+  <div class="col-2">
+    <div class="float-left p-1">
+    <i class="glyphicon glyphicon-user"></i>
     <span>{{title}}</span>
   </div>
-  <div class="tools">
+  </div>
+  <div class="col-10">
+    <div class="tools float-right p-1">
     <a href="javascript:;" class="mr-2 tooltips-top-left" data-tooltips="Reload">
       <i class="glyphicon glyphicon-refresh"></i>
     </a>
@@ -12,8 +15,9 @@
       <i class="glyphicon glyphicon-menu-down" [ngClass]="{'glyphicon-menu-down':isShow,'glyphicon-menu-up':isShow==false}"></i>
     </a>
   </div>
+  </div>
 </div>
-<div class="" [ngClass]="{'.active':isShow,'hide':isShow==false}">
+<div  class="row" [ngClass]="{'d-block':isShow,'d-none':isShow==false}">
 <ng-content></ng-content>
   </div>
 

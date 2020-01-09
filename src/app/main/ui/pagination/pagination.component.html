@@ -36,6 +36,11 @@
         <li class="page-item"><a  class="page-link" [ngClass]="{'current-page' :this.currentPage==1 }" (click)="clickPageLink($event)">1</a></li>
         <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==2 }" (click)="clickPageLink($event)">2</a></li>
         <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==3 }" (click)="clickPageLink($event)">3</a></li>
+        <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==4 }" (click)="clickPageLink($event)">4</a></li>
+        <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==5 }" (click)="clickPageLink($event)">5</a></li>
+        <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==6 }" (click)="clickPageLink($event)">6</a></li>
+        <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==7 }" (click)="clickPageLink($event)">7</a></li>
+        <li class="page-item"><a class="page-link" [ngClass]="{'current-page' :this.currentPage==8 }" (click)="clickPageLink($event)">8</a></li>
         <li  class="page-item" [ngClass]="{'disabled':this.currentPage==3}">
           <a class="page-link" (click)="clickNext()">
             <i class="glyphicon glyphicon-triangle-right"></i>
@@ -50,11 +55,13 @@
       </ul>
     </div>
 
-
+      <!--    go page-->
       <div class="col-2">
+        <div class="float-right mr-2">
     <span class="mr-2">Go</span>
       <input type="text" class="form-control"  [(ngModel)]="currentPage"  (keyup.enter)="goPage()">
     <span class="ml-2">page</span>
+        </div>
 
   </div>
 </div>

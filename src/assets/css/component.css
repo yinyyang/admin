@@ -7,28 +7,8 @@ panel
 }
 .panel .panel-title {
   background: #95A5A6;
-  border-bottom: 0;
-  padding: 0;
-  margin-bottom: 0;
   color: #fff;
   height: 2rem;
-
-}
-
-
-
-.panel .panel-title  .title {
-  display: inline-block;
-  float: left;
-  padding: 5px;
-
-
-}
-
-.panel .panel-title .tools {
-  display: inline-block;
-  float: right;
-  padding: 5px;
 
 }
 
@@ -40,3 +20,19 @@ panel
   cursor: pointer;
 }
 
+/** table
+ */
+
+.table .btn {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+  border-radius: 0rem;
+  line-height: 0.8;
+  padding: 3px;
+}
+
+.table .td-link{
+  color: inherit;
+}

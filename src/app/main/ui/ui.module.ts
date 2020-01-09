@@ -14,7 +14,8 @@ import { TabpanelComponent } from './tabpanel/tabpanel.component';
 @NgModule({
   declarations: [UiComponent, FormComponent, TableComponent, PanelComponent, TabpanelComponent],
   exports: [
-    PanelComponent
+    PanelComponent,
+    TableComponent
   ],
   imports: [
     CommonModule,
